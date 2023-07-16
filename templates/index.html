@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="/static/index.css" rel="stylesheet"/>
+    <title>Iris</title>
+    <script>
+        function reveal(){
+            document.getElementById('output').style.display='block';
+            document.getElementById("form_data").style.display='none';
+        }
+        function back(){
+            document.getElementById('output').style.display='none';
+            document.getElementById("form_data").style.display='flex';
+        }
+    </script>
+</head>
+<body>
+    <h1>Iris Classification</h1>
+    <section>
+    <form action="/predict" method="POST" id="form_data">
+        <div>sepal length:<input type="number" name="sepal_length"/></div>
+        <div>sepal width:<input type="number" name="sepal_width" /></div>
+        <div>petal length:<input type="number" name="petal_length" /></div>
+        <div>petal width:<input type="number" name="petal_width" /></div>
+        <div><input type="submit"  onclick="reveal()"   class="submit" value="predict"/>
+            <input type="reset" class="submit" value="Reset"/></div><br>
+    <p style="color: blue;text-transform: none;text-align: center;">please enter the decimal values for the above fields</p>
+    </form>
+    <div id="output">
+        <p>{{result}}</p><br>
+        <button onclick="back()">Go back</button>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body h1{
+    color: #9004cc;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    width: 70%;
+    padding: 10px;
+    padding: 4rem;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+section #form_data{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+section form div{
+    margin: 1rem 0rem;
+    color: #9004cc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+section form div input{
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+section form .submit{
+    background-color: #9004cc;
+    border: none;
+    width: 6rem;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+section form .submit:hover{
+    cursor: pointer;
+}
+section #output{
+    display: none;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+section #output button{
+    background-color: #9004cc;
+    border: none;
+    width: max-content;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+section #output button:hover{
+    cursor: pointer;
+}
